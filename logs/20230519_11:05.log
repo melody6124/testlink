@@ -1,0 +1,10 @@
+已关闭的Improvement中需要修改测试用例:TestCaseURL没有填写或错误链接，请补充并发起用例评审;确认无需修改测试用例，请更新IsTestCaseChanged
+
+@刘明宇 http://jira.alauda.cn/browse/ACP-17076 集群未部署nfs-csi插件，创建pv时，NFS 共享存储类型应该不可选，提示先安装插件 
+@王珂 http://jira.alauda.cn/browse/ACP-15333 ACP3.9版本，kube-ovn使用charts安装，升级之后ovs-ovn的pod，还是使用升级前的镜像 
+
+Improvement关闭时，没有按流程进行用例评审，请及时添加comment【用例评审通过】
+参考流程 https://confluence.alauda.cn/pages/releaseview.action?pageId=75094349
+
+@王珂 http://jira.alauda.cn/browse/ACP-23735  alb 处理 ingress资源时设置 status.loadBalancer 字段 
+

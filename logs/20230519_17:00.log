@@ -1,0 +1,4 @@
+过去一周QABugRootCause = 测试用例很难cover的jira需要review是否是真的难cover
+@施源 http://jira.alauda.cn/browse/ACP-25823 3.10.2 升级到 3.12.1，进入虚拟机磁盘页面，页面显示数据加载错误 
+@施源 http://jira.alauda.cn/browse/ACP-25815 3.10.2 升级到 3.12.1，进入虚拟机磁盘页面，页面显示数据加载错误 
+

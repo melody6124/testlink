@@ -1,0 +1,86 @@
+[{'user': '史京南', 'total': 0, 'suites': [{'suitename': '业务视图-OAM 应用', 'user': 'jnshi', 'size': 152, 'detail': []}, {'suitename': '业务视图-原生应用', 'user': 'jnshi', 'size': 67, 'detail': []}, {'suitename': '平台管理-安全管理', 'user': 'jnshi', 'size': 10, 'detail': []}, {'suitename': '平台管理-集群管理-资源管理', 'user': 'jnshi', 'size': 17, 'detail': []}, {'suitename': '业务视图-辅助功能', 'user': 'jnshi', 'size': 10, 'detail': []}, {'suitename': 'etcd监控面板', 'user': 'jnshi', 'size': 4, 'detail': []}, {'suitename': '业务视图-计算组件>部署', 'user': 'hlzheng', 'size': 24, 'detail': []}, {'suitename': '业务视图-计算组件>守护进程集', 'user': 'hlzheng', 'size': 16, 'detail': []}, {'suitename': '业务视图-计算组件>有状态副本集', 'user': 'hlzheng', 'size': 22, 'detail': []}, {'suitename': '业务视图-计算组件>容器组', 'user': 'hlzheng', 'size': 5, 'detail': []}, {'suitename': '业务视图-计算组件>弹性伸缩', 'user': 'hlzheng', 'size': 45, 'detail': []}, {'suitename': '业务视图-计算组件>通用-镜像选择组件', 'user': 'hlzheng', 'size': 0, 'detail': []}, {'suitename': '业务视图-计算组件>通用-容器组表单', 'user': 'hlzheng', 'size': 38, 'detail': []}, {'suitename': '业务视图-计算组件>通用-详情页组件', 'user': 'hlzheng', 'size': 5, 'detail': []}, {'suitename': '业务视图-计算组件>通用-容器组列表', 'user': 'hlzheng', 'size': 7, 'detail': []}, {'suitename': '业务视图-计算组件>通用-局部更新', 'user': 'hlzheng', 'size': 2, 'detail': []}, {'suitename': '业务视图-计算组件>通用-debug', 'user': 'hlzheng', 'size': 1, 'detail': []}, {'suitename': '业务视图-计算组件>gpu', 'user': 'hlzheng', 'size': 3, 'detail': []}, {'suitename': '业务视图-计算组件>通用-取消-阻断性提示', 'user': 'hlzheng', 'size': 0, 'detail': []}, {'suitename': '业务视图-配置', 'user': 'hlzheng', 'size': 49, 'detail': []}, {'suitename': '平台管理-超售比', 'user': 'hlzheng', 'size': 24, 'detail': []}, {'suitename': '项目管理-命名空间', 'user': 'hlzheng', 'size': 31, 'detail': []}, {'suitename': '平台管理-集群管理-自定义资源', 'user': 'hlzheng', 'size': 10, 'detail': []}]}, {'user': '赵晓峰', 'total': 0, 'suites': [{'suitename': '业务视图-应用管理>模板应用', 'user': 'xfzhao', 'size': 57, 'detail': ['ACP-78950', 'ACP-68521', 'ACP-70387', 'ACP-68517', 'ACP-68534', 'ACP-68547', 'ACP-68834', 'ACP-68835', 'ACP-68888', 'ACP-68889', 'ACP-68553', 'ACP-68556', 'ACP-68568', 'ACP-68570', 'ACP-68572', 'ACP-68573', 'ACP-68884', 'ACP-68885', 'ACP-68612', 'ACP-68613', 'ACP-68638', 'ACP-68616', 'ACP-68624', 'ACP-68886', 'ACP-68887', 'ACP-68823', 'ACP-69236', 'ACP-69243', 'ACP-70396', 'ACP-70729', 'ACP-75130', 'ACP-75222', 'ACP-88265', 'ACP-91090', 'ACP-91093', 'ACP-91094', 'ACP-91096']}, {'suitename': '业务视图-应用管理>组件应用', 'user': 'xfzhao', 'size': 8, 'detail': ['ACP-67768', 'ACP-67773', 'ACP-67775', 'ACP-67786', 'ACP-67788', 'ACP-67776', 'ACP-67777', 'ACP-67779']}, {'suitename': '业务视图-计算组件>定时任务', 'user': 'xfzhao', 'size': 23, 'detail': []}, {'suitename': '业务视图-计算组件>任务', 'user': 'xfzhao', 'size': 9, 'detail': []}, {'suitename': '独立视图-Catalog(应用商店)', 'user': 'xfzhao', 'size': 13, 'detail': ['ACP-88283', 'ACP-77046', 'ACP-77047', 'ACP-77068', 'ACP-77079', 'ACP-77077', 'ACP-77078']}, {'suitename': '业务视图-镜像仓库', 'user': 'xfzhao', 'size': 8, 'detail': ['ACP-62669', 'ACP-62674', 'ACP-63485']}, {'suitename': '平台管理-应用商店管理>Operator', 'user': 'xfzhao', 'size': 27, 'detail': ['ACP-63750', 'ACP-62601', 'ACP-61527', 'ACP-61416', 'ACP-61321', 'ACP-67864', 'ACP-61479']}, {'suitename': '平台管理-应用商店管理>模板仓库', 'user': 'xfzhao', 'size': 46, 'detail': ['ACP-64270', 'ACP-64893', 'ACP-67628', 'ACP-67328', 'ACP-61515', 'ACP-59993', 'ACP-59985', 'ACP-59992', 'ACP-61062', 'ACP-91854', 'ACP-88296']}, {'suitename': '平台管理-应用商店管理>应用包管理', 'user': 'xfzhao', 'size': 5, 'detail': ['ACP-89596', 'ACP-89637', 'ACP-89640', 'ACP-89644', 'ACP-89623']}, {'suitename': '平台管理-应用商店管理>应用商店chart/operator支持ip协议过滤', 'user': 'xfzhao', 'size': 78, 'detail': ['ACP-64270', 'ACP-64893', 'ACP-67628', 'ACP-67328', 'ACP-61515', 'ACP-59993', 'ACP-59985', 'ACP-59992', 'ACP-61062', 'ACP-91854', 'ACP-88296', 'ACP-63750', 'ACP-62601', 'ACP-61527', 'ACP-61416', 'ACP-61321', 'ACP-67864', 'ACP-61479', 'ACP-89596', 'ACP-89637', 'ACP-89640', 'ACP-89644', 'ACP-89623']}, {'suitename': '独立视图-云边协同应用下发', 'user': 'xfzhao', 'size': 26, 'detail': ['ACP-86444', 'ACP-86445', 'ACP-86446', 'ACP-86447', 'ACP-86449', 'ACP-86451', 'ACP-86450', 'ACP-84699', 'ACP-84698', 'ACP-84700']}, {'suitename': '业务视图-GitOps应用(项目级别)', 'user': 'xfzhao', 'size': 21, 'detail': ['ACP-88886', 'ACP-88955', 'ACP-88956', 'ACP-88958', 'ACP-88961', 'ACP-88972', 'ACP-88986', 'ACP-88987', 'ACP-88988', 'ACP-89003', 'ACP-89006', 'ACP-89008', 'ACP-89019', 'ACP-89024', 'ACP-89029', 'ACP-89031', 'ACP-91784', 'ACP-91785', 'ACP-91787', 'ACP-91788', 'ACP-91789']}, {'suitename': '业务视图-存储>持久卷声明', 'user': 'myliu', 'size': 32, 'detail': ['ACP-70209', 'ACP-71100', 'ACP-71175', 'ACP-67213']}, {'suitename': '平台管理-存储管理>持久卷', 'user': 'myliu', 'size': 21, 'detail': ['ACP-70120', 'ACP-70133', 'ACP-70134', 'ACP-70205', 'ACP-70135', 'ACP-90663']}, {'suitename': '平台管理-存储管理>存储类', 'user': 'myliu', 'size': 37, 'detail': ['ACP-91990', 'ACP-82545']}, {'suitename': '平台管理-存储管理>分布式存储', 'user': 'myliu', 'size': 34, 'detail': ['ACP-82519']}, {'suitename': '平台管理-存储管理>本地存储', 'user': 'myliu', 'size': 12, 'detail': []}, {'suitename': '业务视图-存储> 存储桶声明', 'user': 'myliu', 'size': 42, 'detail': ['ACP-70209', 'ACP-71100', 'ACP-71175', 'ACP-67213', 'ACP-78320', 'ACP-78341', 'ACP-78342', 'ACP-58903', 'ACP-61393']}, {'suitename': '平台管理-存储管理>存储桶', 'user': 'myliu', 'size': 0, 'detail': []}, {'suitename': '平台管理-存储管理>卷快照', 'user': 'myliu', 'size': 4, 'detail': []}, {'suitename': '平台管理-存储管理>pvc告警相关', 'user': 'myliu', 'size': 0, 'detail': []}, {'suitename': '平台管理-存储管理>minio对象存储', 'user': 'myliu', 'size': 9, 'detail': ['ACP-91563', 'ACP-91586', 'ACP-91509', 'ACP-86862']}]}, {'user': '施源', 'total': 0, 'suites': [{'suitename': '业务视图-网络>内部路由', 'user': 'yuanshi', 'size': 38, 'detail': ['ACP-63393', 'ACP-59818', 'ACP-80209', 'ACP-80648', 'ACP-80649', 'ACP-83668', 'ACP-84624', 'ACP-84625']}, {'suitename': '业务视图-网络>外部路由', 'user': 'yuanshi', 'size': 21, 'detail': ['ACP-59929', 'ACP-59931', 'ACP-59936', 'ACP-59937', 'ACP-59938', 'ACP-82043']}, {'suitename': '业务视图-网络>入站规则', 'user': 'yuanshi', 'size': 38, 'detail': ['ACP-76839', 'ACP-76842', 'ACP-82044']}, {'suitename': '平台管理-网络管理>域名', 'user': 'yuanshi', 'size': 35, 'detail': ['ACP-82045']}, {'suitename': '平台管理-网络管理>证书', 'user': 'yuanshi', 'size': 14, 'detail': ['ACP-78664', 'ACP-82046']}, {'suitename': '平台管理-网络管理>子网>calico', 'user': 'yuanshi', 'size': 71, 'detail': ['ACP-59604', 'ACP-87082', 'ACP-87091', 'ACP-87102', 'ACP-92346', 'ACP-92349', 'ACP-92351', 'ACP-92353']}, {'suitename': '业务视图-虚拟化', 'user': 'yuanshi', 'size': 219, 'detail': ['ACP-88582', 'ACP-88585', 'ACP-88586', 'ACP-88588', 'ACP-88590', 'ACP-88591', 'ACP-88592', 'ACP-88596', 'ACP-78275', 'ACP-78631', 'ACP-78095', 'ACP-80064', 'ACP-78096', 'ACP-80128', 'ACP-78634', 'ACP-78642', 'ACP-78644', 'ACP-78651', 'ACP-78654', 'ACP-78656', 'ACP-67738', 'ACP-66522', 'ACP-66550', 'ACP-66551', 'ACP-66552', 'ACP-66553', 'ACP-66554', 'ACP-66555', 'ACP-66557', 'ACP-66558', 'ACP-66560', 'ACP-66561', 'ACP-66562', 'ACP-66563', 'ACP-66565', 'ACP-68447', 'ACP-68450', 'ACP-74146', 'ACP-63121', 'ACP-67798', 'ACP-71697', 'ACP-80036', 'ACP-80040', 'ACP-80049', 'ACP-80057', 'ACP-80058', 'ACP-87702', 'ACP-87732', 'ACP-87733', 'ACP-87747', 'ACP-87749', 'ACP-87750', 'ACP-87751', 'ACP-87752', 'ACP-87753', 'ACP-87754', 'ACP-87755', 'ACP-87756', 'ACP-87757', 'ACP-87768', 'ACP-87779', 'ACP-87780', 'ACP-87781', 'ACP-87782', 'ACP-87783', 'ACP-87784', 'ACP-87786', 'ACP-87787', 'ACP-87790', 'ACP-87791', 'ACP-87792', 'ACP-87793', 'ACP-90383', 'ACP-88289', 'ACP-88290', 'ACP-88307', 'ACP-88308', 'ACP-88311', 'ACP-88315', 'ACP-88325', 'ACP-88327', 'ACP-88333', 'ACP-88329', 'ACP-88335', 'ACP-88346', 'ACP-88348', 'ACP-88598', 'ACP-88371', 'ACP-88372', 'ACP-88373', 'ACP-88379', 'ACP-88380', 'ACP-88451', 'ACP-88452', 'ACP-91024', 'ACP-91025', 'ACP-88498', 'ACP-88499', 'ACP-88505', 'ACP-88506', 'ACP-78785', 'ACP-63115']}, {'suitename': '平台管理-虚拟化管理', 'user': 'yuanshi', 'size': 22, 'detail': ['ACP-66603', 'ACP-90456', 'ACP-90459']}]}, {'user': '王珂', 'total': 0, 'suites': [{'suitename': '业务视图-网络>负载均衡', 'user': 'kewang', 'size': 156, 'detail': ['ACP-64108', 'ACP-60942', 'ACP-60943', 'ACP-80620', 'ACP-80621', 'ACP-80622', 'ACP-80632', 'ACP-80579', 'ACP-80580', 'ACP-80581', 'ACP-80587', 'ACP-80585', 'ACP-80586', 'ACP-59727', 'ACP-59808', 'ACP-59809', 'ACP-82038', 'ACP-61422', 'ACP-62481', 'ACP-61434', 'ACP-61438', 'ACP-76277', 'ACP-76278', 'ACP-59776', 'ACP-59771', 'ACP-59811', 'ACP-61441', 'ACP-76301', 'ACP-76312', 'ACP-62767', 'ACP-62778', 'ACP-80028', 'ACP-82118', 'ACP-62769', 'ACP-62771', 'ACP-62777', 'ACP-62782', 'ACP-82119', 'ACP-82008', 'ACP-82009', 'ACP-81999', 'ACP-73538', 'ACP-59799', 'ACP-59804', 'ACP-59806', 'ACP-61180', 'ACP-64837', 'ACP-80029', 'ACP-80030', 'ACP-77937', 'ACP-59807', 'ACP-77848']}, {'suitename': '业务视图-网络>网络策略', 'user': 'kewang', 'size': 35, 'detail': ['ACP-74909', 'ACP-74918', 'ACP-74920', 'ACP-74932', 'ACP-81960', 'ACP-88797', 'ACP-88798', 'ACP-59964', 'ACP-59968']}, {'suitename': '业务视图-网络>alb集成GatewayAPI', 'user': 'kewang', 'size': 74, 'detail': ['ACP-80601', 'ACP-80609', 'ACP-80612', 'ACP-91054', 'ACP-82212', 'ACP-82223', 'ACP-85787', 'ACP-81664', 'ACP-85767', 'ACP-85769', 'ACP-85766', 'ACP-85764', 'ACP-85758', 'ACP-80647', 'ACP-80651', 'ACP-81330', 'ACP-80845', 'ACP-80848', 'ACP-85783', 'ACP-80928', 'ACP-80930', 'ACP-80929', 'ACP-85776', 'ACP-81313']}, {'suitename': '平台管理-网络管理>负载均衡', 'user': 'kewang', 'size': 41, 'detail': []}, {'suitename': '平台管理-网络管理>负载均衡器-重构用例', 'user': 'kewang', 'size': 74, 'detail': ['ACP-92226', 'ACP-92220', 'ACP-92224', 'ACP-91430', 'ACP-92134', 'ACP-92127', 'ACP-92129', 'ACP-92130', 'ACP-92146', 'ACP-92151', 'ACP-91432', 'ACP-91445', 'ACP-91446', 'ACP-91447', 'ACP-91448', 'ACP-91451', 'ACP-92020', 'ACP-92021', 'ACP-92022', 'ACP-92024', 'ACP-92025', 'ACP-92026', 'ACP-92027', 'ACP-92028', 'ACP-92029', 'ACP-92030', 'ACP-92032', 'ACP-92033', 'ACP-92034', 'ACP-92036', 'ACP-92038', 'ACP-92039', 'ACP-92040', 'ACP-92042', 'ACP-92157', 'ACP-92158', 'ACP-92161', 'ACP-92162', 'ACP-92164', 'ACP-92167', 'ACP-92168', 'ACP-92170', 'ACP-92166', 'ACP-92172', 'ACP-92173', 'ACP-92174', 'ACP-92180', 'ACP-92182', 'ACP-92183', 'ACP-92188', 'ACP-92190', 'ACP-92193', 'ACP-92194', 'ACP-92215', 'ACP-92214', 'ACP-92213', 'ACP-92212', 'ACP-92195', 'ACP-92203', 'ACP-92200', 'ACP-92204', 'ACP-92205', 'ACP-92207', 'ACP-92209', 'ACP-92210', 'ACP-91919', 'ACP-91920', 'ACP-91921', 'ACP-91922', 'ACP-91923', 'ACP-91924', 'ACP-91925', 'ACP-91940', 'ACP-91941']}, {'suitename': '平台管理-网络管理>子网>ovn', 'user': 'kewang', 'size': 104, 'detail': ['ACP-72335', 'ACP-73921', 'ACP-72450', 'ACP-86996', 'ACP-86997', 'ACP-87000', 'ACP-87002', 'ACP-87005', 'ACP-86999', 'ACP-86998', 'ACP-87008', 'ACP-85569', 'ACP-91050']}, {'suitename': '平台管理-网络管理>集群网络策略', 'user': 'kewang', 'size': 11, 'detail': []}, {'suitename': '平台管理-网络管理>外部地址池', 'user': 'kewang', 'size': 27, 'detail': ['ACP-82750']}, {'suitename': '平台管理-ovn集群互通管理', 'user': 'kewang', 'size': 5, 'detail': []}, {'suitename': '平台管理-kubeOVN网络可视化', 'user': 'kewang', 'size': 9, 'detail': []}, {'suitename': '平台管理-网络管理>网络检测', 'user': 'kewang', 'size': 28, 'detail': []}]}]
+<font color="warning">史京南 0/542</font> 
+<font color="info">以下模块 API自动化覆盖率都超过80%啦</font>
+
+业务视图-OAM 应用 0/152 100%
+业务视图-原生应用 0/67 100%
+平台管理-安全管理 0/10 100%
+平台管理-集群管理-资源管理 0/17 100%
+业务视图-辅助功能 0/10 100%
+etcd监控面板 0/4 100%
+业务视图-计算组件>部署 0/24 100%
+业务视图-计算组件>守护进程集 0/16 100%
+业务视图-计算组件>有状态副本集 0/22 100%
+业务视图-计算组件>容器组 0/5 100%
+业务视图-计算组件>弹性伸缩 0/45 100%
+业务视图-计算组件>通用-容器组表单 0/38 100%
+业务视图-计算组件>通用-详情页组件 0/5 100%
+业务视图-计算组件>通用-容器组列表 0/7 100%
+业务视图-计算组件>通用-局部更新 0/2 100%
+业务视图-计算组件>通用-debug 0/1 100%
+业务视图-计算组件>gpu 0/3 100%
+业务视图-配置 0/49 100%
+平台管理-超售比 0/24 100%
+项目管理-命名空间 0/31 100%
+平台管理-集群管理-自定义资源 0/10 100%
+
+<font color="warning">赵晓峰 151/512</font> 
+<font color="warning">testlink还有功能模块 API自动化覆盖率没超过80%,请检查!!!如果不能写自动化，请找史京南确认后加上keyword:api_no_automation</font> 
+<font color="info">testlink可以搜索 Keyword包含api 不包含api_no_automation;Execution Type=Manual</font> 
+<font color="info">未达标的结果 模块 未覆盖数/总数 覆盖率 </font>
+业务视图-应用管理>模板应用 37/57 35% 
+业务视图-应用管理>组件应用 8/8 0% 
+独立视图-Catalog(应用商店) 7/13 46% 
+业务视图-镜像仓库 3/8 62% 
+平台管理-应用商店管理>Operator 7/27 74% 
+平台管理-应用商店管理>模板仓库 11/46 76% 
+平台管理-应用商店管理>应用包管理 5/5 0% 
+平台管理-应用商店管理>应用商店chart/operator支持ip协议过滤 23/78 71% 
+独立视图-云边协同应用下发 10/26 62% 
+业务视图-GitOps应用(项目级别) 21/21 0% 
+平台管理-存储管理>持久卷 6/21 71% 
+业务视图-存储> 存储桶声明 9/42 79% 
+平台管理-存储管理>minio对象存储 4/9 56% 
+<font color="info">以下模块 API自动化覆盖率都超过80%啦</font>
+
+业务视图-计算组件>定时任务 0/23 100%
+业务视图-计算组件>任务 0/9 100%
+业务视图-存储>持久卷声明 4/32 88%
+平台管理-存储管理>存储类 2/37 95%
+平台管理-存储管理>分布式存储 1/34 97%
+平台管理-存储管理>本地存储 0/12 100%
+平台管理-存储管理>卷快照 0/4 100%
+
+<font color="warning">施源 116/458</font> 
+<font color="warning">testlink还有功能模块 API自动化覆盖率没超过80%,请检查!!!如果不能写自动化，请找史京南确认后加上keyword:api_no_automation</font> 
+<font color="info">testlink可以搜索 Keyword包含api 不包含api_no_automation;Execution Type=Manual</font> 
+<font color="info">未达标的结果 模块 未覆盖数/总数 覆盖率 </font>
+业务视图-网络>内部路由 8/38 79% 
+业务视图-网络>外部路由 6/21 71% 
+业务视图-虚拟化 102/219 53% 
+<font color="info">以下模块 API自动化覆盖率都超过80%啦</font>
+
+业务视图-网络>入站规则 3/38 92%
+平台管理-网络管理>域名 1/35 97%
+平台管理-网络管理>证书 2/14 86%
+平台管理-网络管理>子网>calico 8/71 89%
+平台管理-虚拟化管理 3/22 86%
+
+<font color="warning">王珂 159/564</font> 
+<font color="warning">testlink还有功能模块 API自动化覆盖率没超过80%,请检查!!!如果不能写自动化，请找史京南确认后加上keyword:api_no_automation</font> 
+<font color="info">testlink可以搜索 Keyword包含api 不包含api_no_automation;Execution Type=Manual</font> 
+<font color="info">未达标的结果 模块 未覆盖数/总数 覆盖率 </font>
+业务视图-网络>负载均衡 52/156 67% 
+业务视图-网络>网络策略 9/35 74% 
+业务视图-网络>alb集成GatewayAPI 24/74 68% 
+平台管理-网络管理>负载均衡器-重构用例 74/74 0% 
+<font color="info">以下模块 API自动化覆盖率都超过80%啦</font>
+
+平台管理-网络管理>负载均衡 0/41 100%
+平台管理-网络管理>子网>ovn 13/104 88%
+平台管理-网络管理>集群网络策略 0/11 100%
+平台管理-网络管理>外部地址池 1/27 96%
+平台管理-ovn集群互通管理 0/5 100%
+平台管理-kubeOVN网络可视化 0/9 100%
+平台管理-网络管理>网络检测 0/28 100%
+

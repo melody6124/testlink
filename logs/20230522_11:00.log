@@ -1,0 +1,9 @@
+Bug关闭时，没有按流程进行用例评审，请及时添加comment【用例评审通过】
+参考流程 https://confluence.alauda.cn/pages/releaseview.action?pageId=75094349
+
+@施源 http://jira.alauda.cn/browse/ACP-25823 3.10.2 升级到 3.12.1，进入虚拟机磁盘页面，页面显示数据加载错误 
+@施源 http://jira.alauda.cn/browse/ACP-25815 3.12.1，在虚拟机详情页面创建磁盘，进入虚拟机磁盘页面，页面显示数据加载错误 
+@王珂 http://jira.alauda.cn/browse/ACP-24962 业务集群部署的默认alb获取不到监控信息 
+@王珂 http://jira.alauda.cn/browse/ACP-24308 网络流量数据不准确，计算单位选择错误 
+@王珂 http://jira.alauda.cn/browse/ACP-23492 负载均衡器，http和https协议 端口-规则，添加多个类型和多个参数后，端口详情页数据显示不全 
+

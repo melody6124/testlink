@@ -1,0 +1,9 @@
+测试用例设计任务关闭时，Output URL没有填写或错误链接，请补充并发起用例评审
+@王珂 http://jira.alauda.cn/browse/ACP-22938 支持纯IPv6集群 - 功能测试用例设计 
+@王珂 http://jira.alauda.cn/browse/ACP-21861 ALB支持容器网络模式 - 测试用例设计(功能、非功能、安全) 
+
+测试用例设计任务关闭时，没有按流程进行用例评审，请及时添加comment【用例评审通过】
+参考流程 https://confluence.alauda.cn/pages/releaseview.action?pageId=75094349
+
+@刘明宇 http://jira.alauda.cn/browse/ACP-23331 存储桶功能产品化 - 功能测试用例设计 
+
