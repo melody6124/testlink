@@ -92,21 +92,21 @@ def send_high_smoke(result):
                     ['业务视图-计算组件>通用-容器组表单', '业务视图-计算组件>通用-详情页组件', '业务视图-计算组件>通用-局部更新', '业务视图-计算组件>通用-debug', '业务视图-计算组件>通用-镜像选择组件',
                      '业务视图-计算组件>通用-取消-阻断性提示', '业务视图-计算组件>asm-acp融合', '功能开关']:
                 suites.append(suite['suitename'])
-            if suites:
-                contents = contents + "@{} 测试集 {}\n".format(ret['user'], suites)
-        if contents != "":
-            content = content + contents
-        else:
-            content = "恭喜恭喜，每个功能模块High的用例都有smoke"
-        print(content)
-        msg = {
-            "msgtype": "markdown",
-            "markdown": {
-                "content": content,
-            }
+        if suites:
+            contents = contents + "@{} 测试集 {}\n".format(ret['user'], suites)
+    if contents != "":
+        content = content + contents
+    else:
+        content = "恭喜恭喜，每个功能模块High的用例都有smoke"
+    print(content)
+    msg = {
+        "msgtype": "markdown",
+        "markdown": {
+            "content": content,
         }
-        ret = requests.post(wechat_webhook, json=msg)
-        print(ret.text)
+    }
+    ret = requests.post(wechat_webhook, json=msg)
+    print(ret.text)
 
 
 def send_api(result):

@@ -16,7 +16,8 @@ testproject_id = tlc.getProjectIDByName(test_project_name)
 parent_suite = "容器平台"
 parent_id = tlc.getTestSuite(parent_suite, test_project_prefix)[0]["id"]
 # print(f"容器平台的二级目录ID:{parent_id}")
-suite_assign = ui_suite_assign
+suite_assign = ui_suite_assign.copy()
+suite_assign.pop(0)
 
 
 def list_test_case_not_automated():
@@ -53,7 +54,7 @@ def list_test_case_not_automated():
 
 
 def send(content):
-    wechat_webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=7b61450b-5a61-4bb1-9539-8e993218d5f7"
+    wechat_webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=72cd5663-9272-494f-9a0c-5c0e36341358"
     msg = {
         "msgtype": "markdown",
         "markdown": {

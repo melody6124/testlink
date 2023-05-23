@@ -2,13 +2,13 @@
 import requests
 from jira import JIRA
 
+from division import en_chs, mentions
+
 jira = JIRA(server="https://jira.alauda.cn", basic_auth=("yuzhou", "zhouyu0401"))
 jql = 'project = ACP AND issuetype = Improvement AND status = Resolved AND IsTestCaseChanged = 需要修改测试用例 AND created >= 2022-06-01 ORDER BY created DESC'
 issues = jira.search_issues(jql)
-en_ch = {"Jingnan Shi": "史京南", "Hulin Zheng": "郑虎林", "Ke Wang": "王珂", "Yuan Shi": "施源", "Mingyu Liu": "刘明宇",
-         "Xiaofeng Zhao": "赵晓峰", "Junlei Li": "李俊磊", "Ya Wei": "魏娅", "Zhongxiu Zhang": "张仲秀"}
-mention = {"Jingnan Shi": "jnshi", "Hulin Zheng": "hlzheng", "Ke Wang": "kewang", "Yuan Shi": "yuanshi", "Mingyu Liu": "myliu",
-           "Xiaofeng Zhao": "xfzhao", "Junlei Li": "jlli", "Ya Wei": "yawei", "Zhongxiu Zhang": "zxzhang"}
+en_ch = en_chs
+mention = mentions
 notestcaseurl = ""
 nocomment = ""
 content = ""

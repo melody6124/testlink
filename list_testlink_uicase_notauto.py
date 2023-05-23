@@ -69,7 +69,7 @@ def send_content(result):
         content = "恭喜恭喜，testlink High smoke的用例都加完UI自动化啦"
     print(content)
     if content != "":
-        wechat_webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=7b61450b-5a61-4bb1-9539-8e993218d5f7"
+        wechat_webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=72cd5663-9272-494f-9a0c-5c0e36341358"
         msg = {
             "msgtype": "markdown",
             "markdown": {
