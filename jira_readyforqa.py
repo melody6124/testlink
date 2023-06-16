@@ -5,13 +5,13 @@ from jira import JIRA
 from division import jira_user_features, en_chs, mentions
 
 jira = JIRA(server="https://jira.alauda.cn", basic_auth=("yuzhou", "zhouyu0401"))
-jql = 'project = ACP AND issuetype in (Bug, Improvement) AND  status in ("Ready for QA", "In Testing", "Ready for Doc Review") AND fixVersion not in ("v3.8.2-isdp","v3.8.2-isdp-1","v3.8.2-isdp-2","v3.8.2-isdp-3") ORDER BY reporter ASC, status ASC'
+jql = 'project = ACP AND  status in ("Ready for QA", "In Testing", "Ready for Doc Review") AND fixVersion not in ("v3.8.2-isdp","v3.8.2-isdp-1","v3.8.2-isdp-2","v3.8.2-isdp-3") ORDER BY reporter ASC, status ASC'
 issues = jira.search_issues(jql)
 en_ch = en_chs
 mention = mentions
 user_features = jira_user_features
-ing_version = "v3.10.3"
-future_version = "v3.13"
+ing_version = "v3.13"
+future_version = "v3.12.2"
 ing_us = ""
 future_us = ""
 us = ""

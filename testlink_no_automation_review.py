@@ -16,6 +16,7 @@ subsuites = tlc.getTestSuitesForTestSuite(testsuiteid=testsuite_id)
 wechat_webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=72cd5663-9272-494f-9a0c-5c0e36341358"
 review_api_cases = []
 review_ui_cases = []
+review_notest_cases = []
 for subsuite in subsuites.values():
     subsuite_id = subsuite["id"]
     cases = tlc.getTestCasesForTestSuite(testsuiteid=subsuite_id, deep=True, details='full')
@@ -30,14 +31,20 @@ for subsuite in subsuites.values():
                 review_api_cases.append(id)
             if 'ui_no_automation' in keywords:
                 review_ui_cases.append(id)
-print('当前检查的数据')
+            if 'no_test' in keywords:
+                review_notest_cases.append(id)
+print('当前检查的数据:api_no_automation')
 print(review_api_cases)
 print(len(review_api_cases))
-print('当前检查的数据')
+print('当前检查的数据:ui_no_automation')
 print(review_ui_cases)
 print(len(review_ui_cases))
+print('当前检查的数据:no_test')
+print(review_notest_cases)
+print(len(review_notest_cases))
 today = datetime.date.today()
-curren_dir = os.getcwd()
+# curren_dir = os.getcwd()
+curren_dir = "/Users/apple/testlink"
 # 获取上一次的api数据
 files = os.listdir("{}/api_no_automation".format(curren_dir))
 api_file_name = "{}/api_no_automation/{}".format(curren_dir, files[-1])
@@ -54,20 +61,27 @@ last_ui_cases = file.read()
 print('上次检查的数据 {}'.format(ui_file_name))
 print(last_ui_cases)
 file.close()
-
+# 获取上一次的notest数据
+files = os.listdir("{}/no_test".format(curren_dir))
+notest_file_name = "{}/no_test/{}".format(curren_dir, files[-1])
+file = open(notest_file_name, 'r+', encoding='utf-8')
+last_notest_cases = file.read()
+print('上次检查的数据 {}'.format(notest_file_name))
+print(last_notest_cases)
+file.close()
 # 比较 api输出结果
 review_api = ''
 for case in review_api_cases:
     if case not in last_api_cases:
         detail = tlc.getTestCase(testcaseexternalid=case)
-        review_api = review_api + "{}:{}\n".format(case, detail[0]['name'])
+        review_api = review_api + "{} {}\n".format(case, detail[0]['name'])
 print(review_api)
 
 if review_api != '':
     msg = {
         "msgtype": "markdown",
         "markdown": {
-            "content": f"<font color=\"warning\">新增api_no_automation的用例 需要评审</font> \n {review_api}"
+            "content": f"<font color=\"warning\">新增api_no_automation的用例 需要评审 @史京南</font> \n{review_api}"
         }
     }
     requests.post(wechat_webhook, json=msg)
@@ -76,14 +90,31 @@ review_ui = ''
 for case in review_ui_cases:
     if case not in last_ui_cases:
         detail = tlc.getTestCase(testcaseexternalid=case)
-        review_ui = review_ui + "{}:{}\n".format(case, detail[0]['name'])
+        review_ui = review_ui + "{} {}\n".format(case, detail[0]['name'])
 print(review_ui)
 
 if review_ui != '':
     msg = {
         "msgtype": "markdown",
         "markdown": {
-            "content": f"<font color=\"warning\">新增ui_no_automation的用例 需要评审 </font> \n {review_ui}"
+            "content": f"<font color=\"warning\">新增ui_no_automation的用例 需要评审 @赵晓峰 </font> \n{review_ui}"
+        }
+    }
+    requests.post(wechat_webhook, json=msg)
+
+# 比较 notest输出结果
+review_notest = ''
+for case in review_notest_cases:
+    if case not in last_notest_cases:
+        detail = tlc.getTestCase(testcaseexternalid=case)
+        review_notest = review_notest + "{} {}\n".format(case, detail[0]['name'])
+print(review_notest)
+
+if review_notest != '':
+    msg = {
+        "msgtype": "markdown",
+        "markdown": {
+            "content": f"<font color=\"warning\">新增no_test的用例 需要评审 @史京南</font> \n{review_notest}"
         }
     }
     requests.post(wechat_webhook, json=msg)
@@ -96,4 +127,8 @@ file.close()
 ui_file_name = "{}/ui_no_automation/{}.txt".format(curren_dir, str(today))
 file = open(ui_file_name, 'w+', encoding='utf-8')
 file.write(str(review_ui_cases))
+file.close()
+notest_file_name = "{}/no_test/{}.txt".format(curren_dir, str(today))
+file = open(notest_file_name, 'w+', encoding='utf-8')
+file.write(str(review_notest_cases))
 file.close()

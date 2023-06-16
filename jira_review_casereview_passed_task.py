@@ -5,7 +5,7 @@ from jira import JIRA
 from division import mentions, en_chs
 
 jira = JIRA(server="https://jira.alauda.cn", basic_auth=("yuzhou", "zhouyu0401"))
-jql = 'project = ACP AND summary ~ 测试用例设计 AND status = Resolved  AND resolutiondate >= 2023-01-01 ORDER BY resolutiondate  DESC'
+jql = 'project = ACP AND summary ~ 测试用例设计 AND summary !~ 非功能 AND status = Resolved  AND resolutiondate >= 2023-01-01 ORDER BY resolutiondate  DESC'
 issues = jira.search_issues(jql)
 en_ch = en_chs
 mention = mentions

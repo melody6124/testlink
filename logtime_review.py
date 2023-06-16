@@ -8,7 +8,8 @@ import requests
 # jira = JIRA(server="https://jira.alauda.cn", basic_auth=("yuzhou", "zhouyu0401"))
 # users = jira.group_members('test')
 # origin_users = list(users.keys())
-origin_users = ['jnshi', 'kewang', 'xfzhao', 'myliu', 'yuanshi', 'hlzheng']
+origin_users = ['jnshi', 'kewang', 'xfzhao', 'myliu', 'yuanshi', 'zxzhang']
+wechat_webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=72cd5663-9272-494f-9a0c-5c0e36341358"
 basic_auth = ("yuzhou", "zhouyu0401")
 users_url = "https://jira.alauda.cn/rest/tempo-core/1/users/search"
 users_payload = {"keys": origin_users}
@@ -32,9 +33,8 @@ for worklog in worklogs_ret.json():
 print(users)
 errors = []
 for user in users:
-    if user['time'] < 27000:
+    if user['time'] < 7.5 * 60 * 60:
         errors.append(user['name'])
-wechat_webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=72cd5663-9272-494f-9a0c-5c0e36341358"
 if errors:
     msg = {
         "msgtype": "text",
