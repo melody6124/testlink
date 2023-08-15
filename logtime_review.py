@@ -8,7 +8,7 @@ import requests
 # jira = JIRA(server="https://jira.alauda.cn", basic_auth=("yuzhou", "zhouyu0401"))
 # users = jira.group_members('test')
 # origin_users = list(users.keys())
-origin_users = ['jnshi', 'kewang', 'xfzhao', 'myliu', 'yuanshi', 'zxzhang']
+origin_users = ['kewang', 'xfzhao', 'myliu', 'yuanshi', 'zxzhang']  # 'jnshi',
 wechat_webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=72cd5663-9272-494f-9a0c-5c0e36341358"
 basic_auth = ("yuzhou", "zhouyu0401")
 users_url = "https://jira.alauda.cn/rest/tempo-core/1/users/search"

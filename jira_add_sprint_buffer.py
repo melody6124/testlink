@@ -9,7 +9,7 @@ print(sprints)
 sprint_name = sprints[0].name
 sprint_id = sprints[0].id
 issue_dict = []
-for name in ["myliu", "yuanshi"]:
+for name in ["xfzhao", "myliu", "yuanshi", "jnshi"]:
     issue_dict.append({'project': "ACP", 'issuetype': {'name': 'Job'}, 'summary': f"{sprint_name}-UI自动化结果分析+修复", 'assignee': {'name': name},
                        'description': "记录每次分析的有效时间（发现开发bug、测试代码bug等,注意关联对应的jira）、无效时间（环境问题、重复分析等)",
                        'customfield_10006': 1, 'labels': ['UI自动化测试发现的bug']})
@@ -20,7 +20,7 @@ for name in ["xfzhao", "kewang", "yuanshi", "jnshi"]:
 for name in ["xfzhao", "myliu", "kewang", "yuanshi", "jnshi", "zxzhang"]:
     issue_dict.append({'project': "ACP", 'issuetype': {'name': 'Job'}, 'summary': f"{sprint_name}-开会bug验证等", 'assignee': {'name': name},
                        'customfield_10006': 2})
-issue_dict.append({'project': "ACP", 'issuetype': {'name': 'Job'}, 'summary': f"{sprint_name}-安全bug验证", 'assignee': {'name': 'zxzhang'},
+issue_dict.append({'project': "ACP", 'issuetype': {'name': 'Job'}, 'summary': f"{sprint_name}-安全处理", 'assignee': {'name': 'zxzhang'},
                    'customfield_10006': 1})
 print(issue_dict)
 ret = jira.create_issues(field_list=issue_dict)
@@ -33,20 +33,3 @@ for result in ret:
 
 print(keys)
 jira.add_issues_to_sprint(sprint_id, keys)
-
-for key in keys:
-    jira.transition_issue(key, "181")
-    jira.transition_issue(key, "201")
-
-# issues = jira.search_issues(f'labels = UI自动化测试发现的bug AND assignee in (jnshi)')
-# for i in issues:
-#     print(i)
-#     print(i.raw)
-#     print(i.raw['fields'])
-
-# transitions = jira.transitions("ACP-26151")
-# print(transitions)
-# jira.transition_issue("ACP-26151", "181")
-# transitions = jira.transitions("ACP-26151")
-# print(transitions)
-# jira.transition_issue("ACP-26151", "201")

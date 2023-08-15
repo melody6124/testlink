@@ -90,7 +90,7 @@ def send_high_smoke(result):
         for suite in ret['suites']:
             if len(suite['high_smoke']) == 0 and suite['suitename'] not in \
                     ['业务视图-计算组件>通用-容器组表单', '业务视图-计算组件>通用-详情页组件', '业务视图-计算组件>通用-局部更新', '业务视图-计算组件>通用-debug', '业务视图-计算组件>通用-镜像选择组件',
-                     '业务视图-计算组件>通用-取消-阻断性提示', '业务视图-计算组件>asm-acp融合', '功能开关', '平台管理-ovn集群互通管理']:
+                     '业务视图-计算组件>通用-取消-阻断性提示', '业务视图-计算组件>asm-acp融合', '功能开关', '平台管理-ovn集群互通管理', '平台管理-kubeOVN网络可视化']:
                 suites.append(suite['suitename'])
         if suites:
             contents = contents + "@{} 测试集 {}\n".format(ret['user'], suites)

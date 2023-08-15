@@ -12,7 +12,7 @@ testproject_id = tlc.getProjectIDByName(test_project_name)
 plans = tlc.getProjectTestPlans(testproject_id)
 
 jira = JIRA(server="https://jira.alauda.cn", basic_auth=("yuzhou", "zhouyu0401"))
-jql = 'project = ACP AND issuetype = Bug AND priority = "L0 - Critical" AND status != Cancelled AND (fixVersion = EMPTY or Sprint is EMPTY) AND created >= -1d order by created DESC'
+jql = 'project = ACP AND issuetype = Bug AND priority = "L0 - Critical" AND status != Cancelled AND (fixVersion = EMPTY or Sprint is EMPTY) AND created >= -1d ORDER BY  created DESC'
 issues = jira.search_issues(jql)
 closed = ""
 no_testplan = ""

@@ -12,7 +12,7 @@ testproject_id = tlc.getProjectIDByName(test_project_name)
 plans = tlc.getProjectTestPlans(testproject_id)
 
 jira = JIRA(server="https://jira.alauda.cn", basic_auth=("yuzhou", "zhouyu0401"))
-jql = 'project = ACP AND (summary ~ 测试任务 or summary ~ 功能测试执行) AND summary !~ 非功能  AND summary !~ S1  AND summary !~ S2 AND issuetype in (Job, Task) AND resolution in (Done, "Pass Test") AND resolved >= -5d'
+jql = 'project = ACP AND summary ~ 功能测试执行 AND summary !~ 非功能  AND summary !~ S1  AND summary !~ S2 AND summary !~ S3 AND issuetype in (Job, Task) AND resolution in (Done, "Pass Test") AND resolved >= -5d'
 issues = jira.search_issues(jql)
 closed = ""
 no_testplan = ""

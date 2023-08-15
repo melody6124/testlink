@@ -12,7 +12,7 @@ testproject_id = tlc.getProjectIDByName(test_project_name)
 plans = tlc.getProjectTestPlans(testproject_id)
 
 jira = JIRA(server="https://jira.alauda.cn", basic_auth=("yuzhou", "zhouyu0401"))
-jql = 'project = ACP AND issuetype = Bug AND BugFoundStage = 发版后阶段 AND resolution not in ("Not a Bug",Rejected,Duplicate,"By Design") AND resolved >= -1w'
+jql = 'project = ACP AND issuetype = Bug AND BugFoundStage = 发版后阶段 AND resolution not in ("Not a Bug",Rejected,Duplicate,"By Design") AND (labels not in (tencent, 非产品问题,稳定性问题,性能问题,安全问题) OR labels is EMPTY) AND created >= -1w'
 issues = jira.search_issues(jql)
 no_comment = ""
 no_qaowner = ""

@@ -5,9 +5,10 @@ import testlink
 
 url = 'http://testlink.alauda.cn/lib/api/xmlrpc/v1/xmlrpc.php'
 key = 'ce5899e587724a8945c732ed3ff37ff7'
-testplan_name = "ACP3.12.1发版测试-第一轮手动测试"
+testplan_name = "ACP3.13发版测试-第一轮手动测试"
 build_name = "r1"
-test_project_name = "ACP-3.12.x"
+test_project_name = "ACP-3.13.x"
+report = "report_002.json"
 
 tlc = testlink.TestlinkAPIClient(url, key)
 
@@ -38,7 +39,7 @@ def report_test_result():
     for build_info in builds_info:
         if build_info["name"] == build_name:
             buildid = build_info["id"]
-    with open("report.json", 'r', encoding='utf-8') as f:
+    with open(report, 'r', encoding='utf-8') as f:
         json_content = json.load(f)
         for result in json_content['results']:
             if "cypress/e2e/acp" in result['fullFile']:
